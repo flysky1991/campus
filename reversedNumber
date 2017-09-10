@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 10 09:47:02 2017
+
+@author: Administrator
+"""
+'''
+目标：求一个数的相反数+本身,然后输出.
+'''
+
+
+n = str(input())
+
+n2 = (n[::-1])
+
+n3 = int(n) + int(n2)
+
+print(n3)
