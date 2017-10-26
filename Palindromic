@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 26 09:34:01 2017
+
+@author: Administrator
+"""
+
+'''
+目标：判断一个给定的字符串是否是回文
+'''
+
+def isPalindromic(string):
+    s = string
+    l = len(s)
+    l2 = int(l/2)
+    for i in range(0,l2+1):
+        if (i < (l-i-1)):
+            if (s[i] != s[l-i-1]):
+                return False
+        else:
+            return True
+
+if __name__ == "__main__":
+    string1 = str(input())
+    if(isPalindromic(string1) == True):
+        print("该字符串是回文！")
+    else:
+        print("该字符串不是回文！")
